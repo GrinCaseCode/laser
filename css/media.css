@@ -853,6 +853,7 @@
     .billbord {
         margin: 0;
         padding: 0;
+        background-position: 65% 50%;
     }
     .header {
         padding: 8px 0;
@@ -1034,6 +1035,9 @@
         border-left: 2px dashed #8D99AE;
         display: block !important;
     }
+    .steps-right .row > div:nth-last-child(2) .item-step::before {
+        display: none !important;
+    }
     .steps-right .row > div:last-child .item-step::before {
         display: none !important;
     }
@@ -1145,7 +1149,7 @@
         display: block;
     }
     .sandwich {
-        margin-left: 10px;
+        margin-left: 15px;
         display: flex;
     }
     .header__wrapper .phone-main {
@@ -1236,7 +1240,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+    .steps-right .row > div:nth-last-child(2) .item-step::before {
+        display: block !important;
+    }
 }
 
 /* Extra Small Devices, Phones */

@@ -902,6 +902,7 @@ form {
 	font-size: 24px;
 	padding: 28px 30px;
 	padding-right: 23px;
+	font-weight: 500;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
