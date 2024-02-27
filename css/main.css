@@ -312,6 +312,7 @@ form {
 .nav > li.active > a::after {
 	transform: rotate(180deg);
 }
+.btn-social:hover,
 .menu a:hover,
 .nav > li > a:hover,
 .nav li ul li a:hover {
