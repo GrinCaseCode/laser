@@ -1066,10 +1066,10 @@
         margin: 0;
     }
     .slider-equipment .slick-prev {
-        left: -15px;
+        left: -10px;
     }
     .slider-equipment .slick-next {
-        right: -15px;
+        right: -10px;
     }
     .slider-equipment .slick-arrow {
         top: 280px;
@@ -1214,6 +1214,24 @@
         padding: 6px 10px;
         border: 1px solid rgba(237, 242, 244, 0.2);
       }
+      .nav > li > a {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    .menu a {
+        padding: 4px 0;
+        display: block;
+    }
+    .messengers-block {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .list-socials img {
+        max-width: 30px;
+    }
+    .messengers-block {
+        padding: 8px 14px;
+    }
 }
 
 /* Small Devices, Tablets */

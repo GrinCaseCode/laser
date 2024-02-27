@@ -65,7 +65,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$(".open-search").click(function() {
 		{
 			if ($(window).width() < 992) { 
-				$(".header-bottom").slideUp(200);
+				$(".sidebar").slideUp(200);
 				$(".menu-overlay").fadeOut(200);
 				$(".sandwich").removeClass("active");
 			}
