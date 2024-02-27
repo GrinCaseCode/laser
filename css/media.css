@@ -1239,6 +1239,22 @@
     .messengers-block {
         padding: 8px 14px;
     }
+    .footer {
+        font-size: 13px;
+    }
+    .footer .phone-main {
+        font-size: 17px;
+    }
+    .footer__nav {
+        font-size: 15px;
+    }
+    .footer__nav a {
+        padding: 3px 0;
+        display: block;
+    }
+    .consultation .title-section {
+        max-width: 300px;
+    }
 }
 
 /* Small Devices, Tablets */
