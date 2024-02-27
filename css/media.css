@@ -901,9 +901,9 @@
         scrollbar-color: transparent transparent;
     }
     .billbord__content {
-        padding-top: 120px;
-        padding-bottom: 60px;
-        min-height: initial;
+        padding-top: 140px;
+        padding-bottom: 30px;
+        min-height: 575px;
     }
     .title-big {
         font-size: 33px;
