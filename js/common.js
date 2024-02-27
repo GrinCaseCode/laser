@@ -160,7 +160,7 @@ $('.tabs li a').click(function(event) {
 	$(this).parent().parent().siblings(".btn-tab").html(textTab);
 	$(this).parent().parent().siblings(".btn-tab").removeClass("active");
 	
-}); 
+});  
 
 
 	 // стайлер для select
