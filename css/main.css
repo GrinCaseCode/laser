@@ -257,9 +257,6 @@ form {
 	padding-right: 22px;
 	border-bottom: 1px solid rgba(237, 242, 244, 0.2);
 }
-.logo {
-	display: inline-block;
-}
 .logo img {
 	width: 191px;
 	height: auto;
