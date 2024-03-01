@@ -1960,7 +1960,7 @@ form {
 }
 .pager .page-numbers.disabled {
 	background: #fff;
-}
+} 
 .prev.page-numbers:hover,
 .next.page-numbers:hover {
 	background: #2b2d42;
