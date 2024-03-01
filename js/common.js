@@ -25,8 +25,18 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
     $(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
   });
 
+
+  /*input file*/
+	$("input[type='file']").change(function(){
+		var filename_text = $(this).parent().siblings(".name-upload");
+		var filename = $(this).val().replace(/.*\\/, "");
+		filename_text.html(filename);
+	});
+	
 	//плавный скролл
-	$(".navigat li a").mPageScroll2id();
+	$(".nav-article li a").mPageScroll2id({
+		offset: 50
+	});
 
 
 	//кнопка sandwich
@@ -53,6 +63,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 	$(".nav__haschild > a").click(function(e) {
 		e.preventDefault();
+		$(this).parent().siblings().find("ul").slideUp(200);
+		$(this).parent().siblings().removeClass("active");
 		if ($(this).siblings("ul").is(":hidden")) {
 			$(this).siblings("ul").slideDown(200);
 			$(this).parent().addClass("active");
@@ -74,6 +86,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			$(".header-search").removeClass("active");
 		} else {
 			$(".header-search").addClass("active");
+			$(".header-search input").focus();
 		}
 	});
 
@@ -96,7 +109,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
-
 		});
 
 	$('.slider-equipment-image').slick({
@@ -108,8 +120,19 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
-
 		});
+
+		$('.slider-portfolio').slick({
+			arrows: true,
+			dots: false,
+			infinite: true,
+			swipe: false,
+			touchThreshold: 1000,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+			});
 	
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
